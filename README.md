@@ -36,7 +36,7 @@ o PC4: 192.168.4.2, Subnet Mask: 255.255.255.0, Gateway: 192.168.4.1
 o PC5: 192.168.4.3, Subnet Mask: 255.255.255.0, Gateway: 192.168.4.1
  
 # PROGRAM
-
+```
 Router0 Configuration Steps
 Click Router 0 and in CLI TYPE THIS Router> enable
 Router# configure terminal Router(config)# interface FastEthernet0/0
@@ -58,6 +58,7 @@ Router(config-if)# ip address 192.168.4.1 255.255.255.0 Router(config-if)# no sh
 Router(config-if)# exit Router(config)# router rip Router(config-router)# version 2
 Router(config-router)# network 192.168.3.0
 Router(config-router)# network 192.168.4.0 Router(config-router)# exit
+```
 Steps to Check the Output:
 1.	Verify RIP Routing Table on Routers
 To check if RIP is working and the routes are learned from the other router, you need to inspect the routing table on each router.
